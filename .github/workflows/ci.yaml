@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+     - main
+
+jobs:
+  build: 
+    runs-on: windows-latest
+
+    steps:
+      - name: Verificando Repositório
+        uses: actions/checkout@v2
+      
+      - name: deploy HTML
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: 124505
+          publish_dir: ./
