@@ -14,5 +14,5 @@ jobs:
       - name: deploy HTML
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: 124505
+          github_token: ${{ secrets.AULA }}
           publish_dir: ./
